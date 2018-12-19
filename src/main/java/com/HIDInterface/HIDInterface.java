@@ -30,6 +30,7 @@ public class HIDInterface implements HidServicesListener {
         this.hidServices = HidManager.getHidServices(hidServicesSpecification);
         this.hidServices.addHidServicesListener(this);
         this.hidServices.start();
+        this.device = this.hidServices.getHidDevice(this.VendorID, this.ProductID, this.SerialNumer);
 
     }
 
@@ -76,7 +77,9 @@ public class HIDInterface implements HidServicesListener {
 
     public byte[] sendMessage(byte[] Message) {
         byte data[] = new byte[this.PacketLength];
-        this.device = this.hidServices.getHidDevice(this.VendorID, this.ProductID, this.SerialNumer);
+        if(this.hidServices == null){
+            this.init();
+        }
         if(this.device == null){
             return (data);
         }
@@ -85,9 +88,9 @@ public class HIDInterface implements HidServicesListener {
             this.device.open();
         }
         if (this.device != null) {
-            this.device.write(Message, this.PacketLength, (byte) 0x00);
+            int val = this.device.write(Message, this.PacketLength, (byte) 0x00);
             boolean moreData = true;
-            int val;
+
             while (moreData) {
                 // This method will now block for 500ms or until data is read
                 val = this.device.read(data, 0);
@@ -105,6 +108,7 @@ public class HIDInterface implements HidServicesListener {
         }
         return data;
     }
+
     public void EndHID(){
         this.hidServices.shutdown();
 
