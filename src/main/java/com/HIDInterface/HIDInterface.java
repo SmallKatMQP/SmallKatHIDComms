@@ -34,7 +34,7 @@ public class HIDInterface implements HidServicesListener {
 
     }
 
-    public void HIDInterface(int VID, int PID, int packetLength) {
+    public HIDInterface(int VID, int PID, int packetLength) {
         this.ProductID = PID;
         this.VendorID = VID;
         this.PacketLength = packetLength;
