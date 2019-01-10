@@ -2,9 +2,7 @@ package com.HIDInterface;
 
 import org.hid4java.*;
 import org.hid4java.event.HidServicesEvent;
-import sun.plugin2.message.Message;
 
-import java.util.concurrent.TimeUnit;
 
 
 public class HIDInterface implements HidServicesListener {
@@ -44,11 +42,6 @@ public class HIDInterface implements HidServicesListener {
     public void hidDeviceAttached(HidServicesEvent hidServicesEvent) {
         System.out.println("Device attached: " + hidServicesEvent);
 
-        // Add serial number when more than one device with the same
-        // vendor ID and product ID will be present at the same time
-        // if (hidServicesEvent.getHidDevice().isVidPidSerial(VendorID, ProductID, SerialNumer)) {
-        //sendMessage(hidServicesEvent.getHidDevice());
-        // }
     }
 
     public void hidDeviceDetached(HidServicesEvent hidServicesEvent) {
@@ -92,7 +85,6 @@ public class HIDInterface implements HidServicesListener {
             boolean moreData = true;
 
             while (moreData) {
-                // This method will now block for 500ms or until data is read
                 val = this.device.read(data, 0);
                 switch (val) {
                     case -1:
