@@ -29,7 +29,10 @@ public class HIDInterface implements HidServicesListener {
         this.hidServices.addHidServicesListener(this);
         this.hidServices.start();
         this.device = this.hidServices.getHidDevice(this.VendorID, this.ProductID, this.SerialNumer);
+        if(this.device.isOpen()){
+        this.device.setNonBlocking(true);
 
+        }
     }
 
     public HIDInterface(int VID, int PID, int packetLength) {
