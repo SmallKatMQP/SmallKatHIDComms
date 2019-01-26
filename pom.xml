@@ -7,6 +7,18 @@
     <groupId>org.SmallKat</groupId>
     <artifactId>SmallKatHIDComms</artifactId>
     <version>1.1-Release</version>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>6</source>
+                    <target>6</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
     <dependencies>
 
         <!-- hid4java for cross-platform HID USB -->
