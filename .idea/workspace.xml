@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f00209ad-6f5a-4463-b0e6-d5cc4a8b902d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/HIDCommsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HIDCommsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/HIDInterface/HIDInterface.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -52,13 +49,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="3562" />
+          <entry key="java" value="4867" />
           <entry key="xml" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3562" />
+          <entry key="JAVA" value="4867" />
           <entry key="XML" value="8" />
         </counts>
       </usages-collector>
@@ -78,8 +75,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/HIDCommsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+            <state relative-caret-position="1166">
+              <caret line="56" column="9" lean-forward="true" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -242,7 +239,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548472656284" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548482582785" />
     <property name="last_opened_file_path" value="$USER_HOME$/SmallKat-XL-Kernel" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -329,12 +326,12 @@
       <workItem from="1548290833639" duration="168000" />
       <workItem from="1548291020312" duration="38000" />
       <workItem from="1548294068582" duration="2296000" />
-      <workItem from="1548446966655" duration="8869000" />
+      <workItem from="1548446966655" duration="13909000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70981000" />
+    <option name="totallyTimeSpent" value="76021000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="5803" y="24" width="1920" height="2136" extended-state="4" />
@@ -349,8 +346,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.78276956" visible="true" weight="0.19577253" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.8776427" weight="0.37846" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.78276956" visible="true" weight="0.1927529" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.8776427" weight="0.3834927" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -358,7 +355,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.21723044" side_tool="true" weight="0.19305211" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.44864574" weight="0.3256385" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.44864574" weight="0.3256165" />
       <window_info anchor="bottom" id="JFrog" order="12" sideWeight="0.4992072" weight="0.32853597" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -378,6 +375,16 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/HIDCommsTest.java</url>
+          <line>72</line>
+          <properties />
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="motors" />
@@ -428,8 +435,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/HIDCommsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+        <state relative-caret-position="1166">
+          <caret line="56" column="9" lean-forward="true" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
